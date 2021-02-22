@@ -23,8 +23,6 @@ class NotesApplicationTests {
 
 	private NoteService noteService;
 
-//	private ExpectedException expectedEx = ExpectedException.none();
-
 	Note note1 = new Note(LocalDate.now(), LocalDate.now(), "Heading one", "Body 1");
 	Note note2 = new Note(LocalDate.now(), LocalDate.now(), "Heading two", "Body 2");
 	Note note3 = new Note(LocalDate.now(), LocalDate.now(), "Heading three", "Body 3 3");
@@ -36,8 +34,6 @@ class NotesApplicationTests {
 
 	@Test
 	void testCreateNote() {
-
-		// TODO změnit na count notes
 		List<Note> notes = noteService.getNotes();
 
 		// Create three testing notes

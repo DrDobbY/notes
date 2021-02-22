@@ -44,20 +44,8 @@ public class Note {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public LocalDate getCreationDate() {
-        return creationDate;
-    }
-
     public void setCreationDate(LocalDate creationDate) {
         this.creationDate = creationDate;
-    }
-
-    public LocalDate getModificationDate() {
-        return modificationDate;
     }
 
     public void setModificationDate(LocalDate modificationDate) {

@@ -4,9 +4,6 @@ package cz.n2.notes;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-
-
 @SpringBootApplication
 
 public class NotesApplication {
