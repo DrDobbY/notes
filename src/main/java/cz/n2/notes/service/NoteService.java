@@ -34,7 +34,7 @@ public class NoteService {
         Optional<Note> noteByHeading = noteRepository.findByHeading(note.getHeading());
 
         if (noteByHeading.isPresent()) {
-            throw new IllegalStateException("Note with this heading already exists");
+            throw new IllegalStateException("Note with this heading already existss");
         }
         note.setModificationDate(LocalDate.now());
         note.setCreationDate(LocalDate.now());
@@ -75,6 +75,8 @@ public class NoteService {
     }
 
     public double getAverageWords() {
+        noteRepository.findAll().stream().map(Note::getBody).map(NoteService::getCountWords).mapToInt(i -> i).average().orElse(0);
+
         double averageWords = 0;
         List<Note> notes = noteRepository.findAll();
         for (int i = 0; i < notes.size(); i++) {
