@@ -20,5 +20,5 @@
 
 - Then we ll assign privileges to the accounts with the command `GRANT ALL PRIVILEGES ON DATABASE "note" TO roleName;` where **role name** is the name of the role from the previous command. **Run this command for all roles**
 
-- The project can now be started and **Postman** can be used to run API calls
+- The project can now be started and **Postman** can be used to run API calls.
 ---
